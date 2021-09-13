@@ -2,6 +2,14 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+#background-color {
+  background-color: ghostwhite
+}
+
+#top-line {
+  text-align: center;
+  font-weight: bold;
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -13,11 +21,12 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
+  border: 1px solid rgb(110, 187, 110);
   width: 281px;
   border-radius: 5px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   border-right: none;
 }
 .search-button {
@@ -36,11 +45,17 @@ body {
   justify-content: center;
 }
 .single-product {
-  padding: 10px;
-  transition: 0.6s;
+  width: 90%;
+  height: 500px;
+  padding: 20px;
+  transition: 0.4s;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
+  background-color: lightgray;
   border-radius: 10px;
   border: 1px solid cyan;
 }
@@ -50,16 +65,34 @@ body {
 }
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
+  border: 1px solid blanchedalmond;
+  background-color: gainsboro;
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-right: 30px;
+  margin-top: 20px;
   position: fixed;
 }
 .cart-main {
   padding-right: 30px;
 }
+.rating{
+  color: gray;
+}
+
+  .topRate{
+    color: goldenrod;
+  }
+  .topMediumRate{
+    color: goldenrod;
+  }
+  .lowMediumRate{
+    color: goldenrod;
+  }
+  .normalRate{
+    color: goldenrod;
+  }
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
