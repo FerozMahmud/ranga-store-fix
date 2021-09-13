@@ -23,23 +23,25 @@
 
 <body id="background-color">
   <header>
-    <h1 id="top-line">Welcome to <span class="text-primary">Online</span> Bazar</h1>
+    <!-- Welcome Lines Here -->
+    <h1 id="top-line">Welcome to <span class="text-primary">Online</span> <span class="text-success">Bazar</span></h1>
   </header>
   <main class="main">
+    <!-- Search Field Here -->
     <div class="search-field">
       <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
+        <input id="input-field" class="search-field" type="text" placeholder="Products Name" />
         <button type="button" class="btn btn-success search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
+          autocomplete="off" id="search-btn" onclick="loadProducts()">Search</button>
       </div>
     </div>
+    <!-- Dynamically product Loaded Here -->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
         </div>
       </div>
+      <!-- My Cart Here -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
@@ -93,7 +95,7 @@
   </main>
   <footer></footer>
 
-  <!-- add javascript  file  -->
+  <!-- Add Javascript  File  -->
   <script src="./js/app.js"></script>
 </body>
 

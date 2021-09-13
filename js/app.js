@@ -19,6 +19,7 @@ const showProducts = (products) => {
     const rating2 = (rate > 3 && rate <= 4) ? 'topMediumRate' : 'noRating';
     const rating3 = (rate > 2 && rate <= 3) ? 'lowMediumRate' : 'noRating';
     const rating4 = (rate > 1 && rate <= 2) ? 'normalRate' : 'noRating';
+
     // Dynamically Data Load 
     div.innerHTML = `<div class="single-product">
       <div>
